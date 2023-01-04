@@ -1,0 +1,38 @@
+body {
+  background: var(--cor-0);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+p,
+a,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.button__action {
+  background: var(--cor-2);
+  padding: 6px 8px;
+  border-radius: 10px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.button__action:hover {
+  color: initial;
+}

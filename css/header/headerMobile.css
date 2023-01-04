@@ -1,0 +1,5 @@
+@media (min-width: 900px) {
+  .menu__mobile {
+    display: none;
+  }
+}

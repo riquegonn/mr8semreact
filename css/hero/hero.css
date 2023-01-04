@@ -1,0 +1,87 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  padding: 0 16px 150px 16px;
+  align-items: center;
+}
+
+.hero__main {
+  display: grid;
+  align-content: center;
+  gap: 30px;
+}
+
+.hero__main p {
+  max-width: 60ch;
+}
+
+.hero__button {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero__img {
+  display: grid;
+  justify-content: center;
+}
+
+.hero__contato {
+  position: relative;
+}
+
+.hero__contato::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: url("../../img/contato.svg") no-repeat;
+  position: absolute;
+  left: 70px;
+}
+
+.hero__contato:hover::after {
+  animation: teste 1.5s ease-out;
+}
+
+@keyframes teste {
+  0% {
+    transform: rotate(0);
+  }
+
+  33% {
+    transform: rotate(-25deg);
+  }
+
+  55% {
+    transform: rotate(0);
+  }
+
+  77% {
+    transform: rotate(25deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+.lottie300px {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .lottie400px {
+    display: none;
+  }
+
+  .lottie300px {
+    display: block;
+  }
+}

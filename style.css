@@ -1,0 +1,7 @@
+@import url("./css/global/global.css");
+@import url("./css/global/cores.css");
+@import url("./css/global/tipografia.css");
+
+@import url("./css/header/header.css");
+@import url("./css/header/headerMobile.css");
+@import url("./css/hero/hero.css");
